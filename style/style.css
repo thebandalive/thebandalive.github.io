@@ -11,6 +11,10 @@ body {
   font-style: normal;
 }
 
+ul {
+  list-style-type: none;
+}
+
 h1 {
   font-size: 4em;
 }
