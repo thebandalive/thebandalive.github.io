@@ -1,0 +1,158 @@
+body {
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+footer {
+  border: 1px solid rgb(211, 63, 189);
+  padding: 20px;
+}
+
+.content {
+  border: 1px solid green;
+  height: 2000px;
+  padding: 20px;
+}
+
+.line-up {
+ border: 1px solid blue;
+}
+
+.text-kr {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poster-area {
+  border: 1px solid white;
+}
+
+.sponsor {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 8pt;
+}
+
+.text-sponsor-pr {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #111;
+  margin: 0;
+}
+
+.sponsor-logo {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200pt;
+  height: 70pt;
+  padding: 0;
+}
+
+.mpot {
+  background-image: url("../images/logo_mpot.png");
+}
+
+.sfac {
+  background-image: url("../images/logo_sfac.png");
+}
+
+
+@keyframes vertical {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  38% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  45% {
+    opacity: 0;
+    -webkit-transform: translateY(-90px);
+    transform: translateY(-90px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.verticalflip {
+  font-size: 4em;
+  font-weight: bold;
+}
+/* 
+.verticalflip span {
+  animation: vertical 15s linear infinite 0s;
+  -ms-animation: vertical 15s linear infinite 0s;
+  -webkit-animation: vertical 15s linear infinite 0s;
+  color: #111;
+  position: absolute;
+  opacity: 0;
+  background: #ffffff;
+  padding: 3px;
+} */
+
+.verticalflip span:nth-child(2) {
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.verticalflip span:nth-child(3) {
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.verticalflip span:nth-child(4) {
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+
+.verticalflip span:nth-child(5) {
+  -ms-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.verticalflip span:nth-child(6) {
+  -ms-animation-delay: 12.5s;
+  -webkit-animation-delay: 12.5s;
+  animation-delay: 12.5s;
+}
+
+.verticalflip span:nth-child(7) {
+  -ms-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
