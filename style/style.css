@@ -52,7 +52,7 @@ footer {
   box-sizing: border-box;
   width: 100%;
   max-width: 1024px;
-  min-width: 380px;
+  min-width: 360px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ footer {
   background-color: #fff;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-style: normal;
   color: #111;
   text-align: right;
