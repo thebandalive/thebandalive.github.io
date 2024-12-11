@@ -1,3 +1,13 @@
+html {
+  font-size: 5vw;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 51px;
+  }
+}
+
 body {
   background-image: url("../images/background.webp");
   background-size: cover;
@@ -9,29 +19,45 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  margin: 0 1rem 0 1rem;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
-h1 {
-  font-size: 4em;
+.section-title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
 }
 
 footer {
-  border: 1px solid rgb(211, 63, 189);
-  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .content {
-  border: 1px solid green;
-  height: 2000px;
-  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1024px;
+  min-width: 400px;
+  margin: 0 auto;
 }
 
-.line-up {
- border: 1px solid blue;
+.section {
+ margin-top: 1rem;
 }
 
 .text-kr {
@@ -41,7 +67,9 @@ footer {
 }
 
 .poster-area {
-  border: 1px solid white;
+  box-sizing: border-box;
+  border: 0.6rem solid white;
+  padding: 1rem 0 1rem 0;
 }
 
 .sponsor {
@@ -53,9 +81,11 @@ footer {
 .text-sponsor-pr {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 600;
+  font-size: 1.2rem;
   font-style: normal;
   color: #111;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .sponsor-logo {
@@ -76,87 +106,88 @@ footer {
   background-image: url("../images/logo_sfac.png");
 }
 
-
-@keyframes vertical {
-  0% {
-    opacity: 0;
-  }
-  4% {
-    opacity: 0;
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  38% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  45% {
-    opacity: 0;
-    -webkit-transform: translateY(-90px);
-    transform: translateY(-90px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .verticalflip {
-  font-size: 4em;
-  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 600;
+  height: 2.4em;
 }
-/* 
-.verticalflip span {
-  animation: vertical 15s linear infinite 0s;
-  -ms-animation: vertical 15s linear infinite 0s;
-  -webkit-animation: vertical 15s linear infinite 0s;
+
+.team-pr {
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.team-name {
+  /* display: inline-block; */
+  background-color: #fff;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-style: normal;
   color: #111;
-  position: absolute;
-  opacity: 0;
-  background: #ffffff;
-  padding: 3px;
-} */
-
-.verticalflip span:nth-child(2) {
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  padding: 0 10px 0 10px;
+  margin-right: 60px;
+  width: fit-content;
+  border-bottom: 2px solid black;
 }
 
-.verticalflip span:nth-child(3) {
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+.team-member {
+  background-color: #fff;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  font-style: normal;
+  color: #111;
+  text-align: right;
+  padding: 0 10px 0 10px;
+  margin-left: 60px;
 }
 
-.verticalflip span:nth-child(4) {
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-  animation-delay: 7.5s;
+.team-program {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-style: normal;
 }
 
-.verticalflip span:nth-child(5) {
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 10,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
 }
 
-.verticalflip span:nth-child(6) {
-  -ms-animation-delay: 12.5s;
-  -webkit-animation-delay: 12.5s;
-  animation-delay: 12.5s;
+a:link {
+  text-decoration: none;
+  color: #fff;
 }
 
-.verticalflip span:nth-child(7) {
-  -ms-animation-delay: 15s;
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
+a:active {
+  text-decoration: underline;
+  background-color: #fff;
+  color: #111;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.adress {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.star {
+  display: none;
+  border-bottom: 0.3rem solid white;
+}
+
+.bang {
+  display: inline-block;
 }
