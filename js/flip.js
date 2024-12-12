@@ -3,14 +3,14 @@ var map = null;
 document.addEventListener("DOMContentLoaded", function () {
   var index = 1;
   function foo() {
-    const currentElement = document.getElementById(index);
+    const currentElement = document.getElementById("name-" + index);
     var nextElement;
     currentElement.classList.remove("bang");
     if(index >= 7) { 
-      nextElement = document.getElementById(1);
+      nextElement = document.getElementById("name-1");
       index = 1;
     } else {
-      nextElement = document.getElementById(index + 1);
+      nextElement = document.getElementById("name-" + (index + 1));
       index++;
     }
     nextElement.classList.add("bang");
