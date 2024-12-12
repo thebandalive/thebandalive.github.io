@@ -21,8 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initMap() {
   map = new naver.maps.Map('map', {
-      center: new naver.maps.LatLng(37.5141299, 127.0291812),
-      zoom: 20
+      center: new naver.maps.LatLng(37.5140437, 127.0294944),
+      zoom: 17,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: naver.maps.ZoomControlStyle.SMALL,
+          position: naver.maps.Position.TOP_RIGHT
+      }
   });
 }
 
