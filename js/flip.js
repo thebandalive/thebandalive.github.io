@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initMap() {
   map = new naver.maps.Map('map', {
       center: new naver.maps.LatLng(37.5141299, 127.0291812),
-      zoom: 10
+      zoom: 20
   });
 }
 
