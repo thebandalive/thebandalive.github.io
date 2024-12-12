@@ -186,10 +186,13 @@ a:visited {
 .star {
   display: none;
   border-bottom: 0.3rem solid white;
+  opacity: 0;
 }
 
 .bang {
   display: inline-block;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
 #map {
@@ -197,4 +200,8 @@ a:visited {
   height:13rem;
   background-color: #fff;
   margin-bottom: 3rem;
+}
+
+.text-narrow {
+  letter-spacing: -2px;
 }
