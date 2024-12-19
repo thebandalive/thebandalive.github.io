@@ -179,11 +179,6 @@ a:visited {
   font-size: 1rem;
 }
 
-.description {
-  text-align: center;
-  font-size: 1rem;
-}
-
 .star {
   display: none;
   border-bottom: 0.3rem solid white;
